@@ -17,7 +17,7 @@ spec:
       securityContext:
       #  allowPrivilegeEscalation: false
       #  runAsNonRoot: true
-        runAsUser: 10001
+      #  runAsUser: 10001
       containers:
         - name: {{.Values.deployment.application_name}}
           image: {{.Values.deployment.image}}:{{.Values.deployment.image_tag}}
