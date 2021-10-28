@@ -46,12 +46,12 @@ spec:
               value: "healthcare-search.healthcare-search.svc.cluster.local"
             - name: SEARCH_PORT
               value: "5051"
-            - name: HTTP_PROXY
-              value: 'http://proxy-wsa.esl.cisco.com:80/'
-            - name: HTTPS_PROXY
-              value: 'http://proxy-wsa.esl.cisco.com:80/'
-            - name: NO_PROXY
-              value: 'calendar,frontend,predictor,redis,refund,search,localhost,127.0.0.1,10.96.0.1'
+            # - name: HTTP_PROXY
+            #   value: 'http://proxy-wsa.esl.cisco.com:80/'
+            # - name: HTTPS_PROXY
+            #   value: 'http://proxy-wsa.esl.cisco.com:80/'
+            # - name: NO_PROXY
+            #   value: 'calendar,frontend,predictor,redis,refund,search,localhost,127.0.0.1,10.96.0.1'
           imagePullPolicy: Always
           volumeMounts:
             - name: shared-data
